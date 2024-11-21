@@ -1,0 +1,26 @@
+# app/config/config.yaml
+
+api_keys:
+  allowed_keys:
+    - "your_existing_api_key_here"
+
+monetization:
+  payment_provider: "stripe"
+  stripe_api_key: "${STRIPE_API_KEY}"
+  stripe_webhook_secret: "${STRIPE_WEBHOOK_SECRET}"
+  success_url: "https://yourdomain.com/success"
+  cancel_url: "https://yourdomain.com/cancel"
+
+logging:
+  level: "INFO"
+  handlers:
+    - "console"
+    - "file"
+  file:
+    filename: "app.log"
+    max_size: 10485760  # 10MB
+    backup_count: 5
+
+model:
+  input_steps: 60
+  forecast_steps: 3

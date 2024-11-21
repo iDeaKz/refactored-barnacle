@@ -1,0 +1,12 @@
+# pyproject.toml
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+max-line-length = 88
+exclude = ["venv", "__pycache__"]

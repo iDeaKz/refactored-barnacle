@@ -1,0 +1,25 @@
+# tests/config_test.yaml
+
+api_keys:
+  allowed_keys:
+    - "test_api_key"
+
+monetization:
+  payment_provider: "stripe"
+  stripe_api_key: "sk_test_teststripeapikey"
+  stripe_webhook_secret: "whsec_testwebhooksecret"
+  success_url: "https://testdomain.com/success"
+  cancel_url: "https://testdomain.com/cancel"
+
+logging:
+  level: "DEBUG"
+  handlers:
+    - "console"
+  file:
+    filename: "test_app.log"
+    max_size: 10485760
+    backup_count: 5
+
+model:
+  input_steps: 60
+  forecast_steps: 3
