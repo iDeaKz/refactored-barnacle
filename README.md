@@ -26,5 +26,5 @@ The **Cryptocurrency Precision Price Prediction Model** is a comprehensive appli
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/crypto_price_predictor.git
+   git clone https://github.com/iDeaKz/crypto_price_predictor.git
    cd crypto_price_predictor
